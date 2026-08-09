@@ -1,8 +1,10 @@
+import heroImage from '../../assets/images/hero.png'
 import './Hero.css'
 
 function Hero() {
   return (
     <section className="hero">
+
       <div className="hero-container">
 
         <div className="hero-content">
@@ -63,11 +65,14 @@ function Hero() {
         <div className="hero-visual">
 
           <div className="hero-image-wrapper">
+
             <img
-              src="/src/assets/images/hero.png"
+              src={heroImage}
               alt="Professional cleaning service"
             />
+
           </div>
+
 
           <div className="hero-floating-card">
 
@@ -85,6 +90,7 @@ function Hero() {
         </div>
 
       </div>
+
     </section>
   )
 }
