@@ -1,0 +1,314 @@
+.hero {
+  width: 100%;
+  background: #f7faf9;
+  overflow: hidden;
+}
+
+.hero-container {
+  max-width: 1200px;
+  min-height: 680px;
+  margin: 0 auto;
+  padding: 80px 24px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 70px;
+}
+
+/* Content */
+
+.hero-content {
+  max-width: 590px;
+}
+
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 8px 14px;
+  margin-bottom: 24px;
+
+  background: #dff7f2;
+  color: #0f766e;
+
+  border-radius: 999px;
+
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.hero h1 {
+  margin: 0 0 24px;
+
+  color: #111827;
+
+  font-size: clamp(48px, 5vw, 70px);
+  line-height: 1.05;
+  letter-spacing: -2.5px;
+}
+
+.hero h1 span {
+  color: #0f766e;
+}
+
+.hero-content > p {
+  max-width: 540px;
+
+  margin: 0 0 32px;
+
+  color: #64748b;
+
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+/* Buttons */
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  margin-bottom: 42px;
+}
+
+.hero-primary-button,
+.hero-secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 50px;
+  padding: 0 22px;
+
+  border-radius: 9px;
+
+  text-decoration: none;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.hero-primary-button {
+  background: #0f766e;
+  color: #ffffff;
+}
+
+.hero-primary-button:hover {
+  background: #115e59;
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 20px rgba(15, 118, 110, 0.2);
+}
+
+.hero-secondary-button {
+  background: #ffffff;
+  color: #0f766e;
+
+  border: 1px solid #cbd5e1;
+}
+
+.hero-secondary-button:hover {
+  border-color: #0f766e;
+
+  transform: translateY(-2px);
+}
+
+/* Trust */
+
+.hero-trust {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.trust-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.trust-item strong {
+  color: #111827;
+  font-size: 19px;
+}
+
+.trust-item span {
+  color: #64748b;
+  font-size: 12px;
+}
+
+.trust-divider {
+  width: 1px;
+  height: 38px;
+
+  background: #cbd5e1;
+}
+
+/* Image */
+
+.hero-visual {
+  position: relative;
+
+  width: 100%;
+  max-width: 540px;
+
+  margin-left: auto;
+}
+
+.hero-image-wrapper {
+  width: 100%;
+  height: 560px;
+
+  overflow: hidden;
+
+  background: #e2e8f0;
+
+  border-radius: 24px;
+
+  box-shadow:
+    0 25px 60px rgba(15, 23, 42, 0.12);
+}
+
+.hero-image-wrapper img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+/* Floating card */
+
+.hero-floating-card {
+  position: absolute;
+
+  left: -30px;
+  bottom: 35px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 16px 20px;
+
+  background: #ffffff;
+
+  border-radius: 12px;
+
+  box-shadow: 0 15px 40px rgba(15, 23, 42, 0.12);
+}
+
+.floating-icon {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #dff7f2;
+  color: #0f766e;
+
+  font-weight: 800;
+}
+
+.hero-floating-card div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.hero-floating-card strong {
+  color: #111827;
+  font-size: 13px;
+}
+
+.hero-floating-card span {
+  color: #64748b;
+  font-size: 11px;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .hero-content {
+    max-width: 700px;
+  }
+
+  .hero-visual {
+    width: 100%;
+    max-width: 650px;
+
+    margin: 0;
+  }
+
+  .hero-image-wrapper {
+    height: 500px;
+  }
+
+  .hero-floating-card {
+    left: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-container {
+    padding: 45px 20px;
+  }
+
+  .hero h1 {
+    font-size: 44px;
+    letter-spacing: -1.5px;
+  }
+
+  .hero-content > p {
+    font-size: 15px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-primary-button,
+  .hero-secondary-button {
+    width: 100%;
+  }
+
+  .hero-trust {
+    gap: 15px;
+  }
+
+  .hero-image-wrapper {
+    height: 400px;
+
+    border-radius: 18px;
+  }
+
+  .hero-floating-card {
+    left: 15px;
+    bottom: 20px;
+
+    padding: 13px 15px;
+  }
+}

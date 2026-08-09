@@ -1,0 +1,148 @@
+.why-section {
+  width: 100%;
+  background: #ffffff;
+  padding: 110px 24px;
+}
+
+.why-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 80px;
+}
+
+.why-content {
+  max-width: 500px;
+}
+
+.why-content h2 {
+  margin: 0 0 22px;
+
+  color: #111827;
+
+  font-size: clamp(38px, 4vw, 54px);
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+}
+
+.why-content h2 span {
+  color: #0f766e;
+}
+
+.why-content > p {
+  margin: 0 0 30px;
+
+  color: #64748b;
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.why-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 50px;
+  padding: 0 22px;
+
+  background: #0f766e;
+  color: #ffffff;
+
+  border-radius: 9px;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.why-button:hover {
+  background: #115e59;
+  transform: translateY(-2px);
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.benefit-card {
+  padding: 28px;
+
+  background: #f7faf9;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.07);
+}
+
+.benefit-icon {
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 20px;
+
+  background: #dff7f2;
+  color: #0f766e;
+
+  border-radius: 12px;
+
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.benefit-card h3 {
+  margin: 0 0 10px;
+
+  color: #111827;
+
+  font-size: 18px;
+}
+
+.benefit-card p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .why-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .why-content {
+    max-width: 650px;
+  }
+}
+
+@media (max-width: 600px) {
+  .why-section {
+    padding: 75px 20px;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+}

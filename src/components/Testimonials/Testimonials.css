@@ -1,0 +1,139 @@
+.testimonials-section {
+  width: 100%;
+  background: #f7faf9;
+  padding: 100px 24px;
+}
+
+.testimonials-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonials-heading {
+  max-width: 650px;
+  margin-bottom: 55px;
+}
+
+.testimonials-heading h2 {
+  margin: 0 0 20px;
+
+  color: #111827;
+
+  font-size: clamp(38px, 4vw, 54px);
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+}
+
+.testimonials-heading h2 span {
+  color: #0f766e;
+}
+
+.testimonials-heading p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.testimonial-card {
+  padding: 30px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
+}
+
+.testimonial-rating {
+  margin-bottom: 20px;
+
+  color: #f59e0b;
+
+  font-size: 17px;
+  letter-spacing: 3px;
+}
+
+.testimonial-review {
+  min-height: 120px;
+
+  margin: 0 0 25px;
+
+  color: #475569;
+
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding-top: 20px;
+
+  border-top: 1px solid #e5e7eb;
+}
+
+.author-avatar {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #dff7f2;
+  color: #0f766e;
+
+  font-weight: 800;
+}
+
+.testimonial-author div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.testimonial-author strong {
+  color: #111827;
+  font-size: 14px;
+}
+
+.testimonial-author span {
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+@media (max-width: 850px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-review {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .testimonials-section {
+    padding: 75px 20px;
+  }
+}
